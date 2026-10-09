@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Hash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        input, button {
+            padding: 12px;
+            margin: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Desafio de Hash</h1>
+
+        <p>
+            Digite duas palavras diferentes e descubra
+            se elas possuem o mesmo valor de hash.
+        </p>
+
+        <input id="palavra1" type="text" placeholder="Primeira palavra">
+        <br>
+
+        <input id="palavra2" type="text" placeholder="Segunda palavra">
+        <br>
+
+        <button onclick="compararHashes()">Calcular Hash</button>
+
+        <div id="resultado" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
